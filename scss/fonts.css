@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "DIN-RegularAlternate";
+    src: url("../fonts/DIN-RegularAlternate.eot");
+    src: url("../fonts/DIN-RegularAlternate.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN-RegularAlternate.woff2") format("woff2"), url("../fonts/DIN-RegularAlternate.woff") format("woff"), url("../fonts/DIN-RegularAlternate.ttf") format("truetype"), url("../fonts/DIN-RegularAlternate.svg#ortho") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,18 @@
+@mixin robotofam ($fs, $lh) {
+    font-family: Roboto;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: normal;
+}
+
+@mixin dinfam ($fs, $lh) {
+    font-family: DIN-RegularAlternate;
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: normal;
+}
+
+@mixin alinkprophover {
+    color: $highlightLinkColor;
+    text-decoration: none;
+}
