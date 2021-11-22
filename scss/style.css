@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "DIN-RegularAlternate";
+  src: url("../fonts/DIN-RegularAlternate.eot");
+  src: url("../fonts/DIN-RegularAlternate.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN-RegularAlternate.woff2") format("woff2"), url("../fonts/DIN-RegularAlternate.woff") format("woff"), url("../fonts/DIN-RegularAlternate.ttf") format("truetype"), url("../fonts/DIN-RegularAlternate.svg#ortho") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: DIN-RegularAlternate;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000; }
+
+.container {
+  max-width: 940px; }
+
+.navbar {
+  padding-top: 72px; }
+
+a {
+  color: #000; }
+  a:hover {
+    color: #f78806;
+    text-decoration: none; }
+
+a.btn-default {
+  background: #fff;
+  color: #f78806; }
+  a.btn-default:hover {
+    color: #f78806;
+    text-decoration: none; }
+
+.nav-item {
+  padding: 0px 15px;
+  font-size: 15px; }
+  .nav-item .active {
+    color: #f78806; }
+
+.aboutHomeCont h3 {
+  font-family: Roboto;
+  font-size: 31px;
+  line-height: 40px;
+  font-weight: normal; }
+
+#dropdownMenuButton {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #17aacf;
+  background: none;
+  border: none;
+  padding: 0px; }
+  #dropdownMenuButton:focus {
+    box-shadow: none; }
+
+.portfolioGallery .dropdown-item:hover,
+.portfolioGallery .dropdown-item:focus {
+  color: #fff;
+  background-color: #17aacf; }
+.portfolioGallery figure {
+  margin: 0 0 50px;
+  overflow: hidden; }
+  .portfolioGallery figure figcaption strong {
+    font-family: DIN-RegularAlternate;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #17aacf;
+    padding: 10px 0px 5px; }
+  .portfolioGallery figure figcaption span {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #3d3d3d; }
+
+footer {
+  background: #e8e8e8;
+  box-shadow: inset 0px 3px 7px #bfbfbf; }
+  footer h6 {
+    font-family: DIN-RegularAlternate;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    color: #3d3d3d;
+    letter-spacing: 1px; }
+  footer .more {
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #f78806; }
+  footer p {
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #3d3d3d; }
+    footer p a {
+      color: #f78806; }
+  footer small {
+    font-size: 10px; }
+    footer small a {
+      color: #f78806; }
+      footer small a:hover {
+        text-decoration: underline; }
+
+.getIntouch {
+  background: #f78806;
+  background: linear-gradient(0deg, #dd8022 0%, #ff9600 50%);
+  padding: 25px 46px;
+  margin-top: -60px;
+  box-shadow: 0px 0px 8px #999; }
+  .getIntouch h6 {
+    font-family: Roboto;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: normal;
+    border-bottom: solid 1px #ffcc79;
+    color: #fff;
+    margin: 0px auto 20px; }
+  .getIntouch span {
+    font-family: DIN-RegularAlternate;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    font-weight: bold;
+    color: #3d3d3d; }
+    .getIntouch span strong {
+      font-size: 16px; }
+    .getIntouch span a {
+      color: #3d3d3d; }
+  .getIntouch .list-inline {
+    border-top: solid 1px #f8c280;
+    margin: auto; }
+    .getIntouch .list-inline li {
+      display: inline-block;
+      margin: 0px 10px; }
+      .getIntouch .list-inline li a {
+        color: #fff; }
+        .getIntouch .list-inline li a i {
+          font-size: 30px; }
+
+@media (max-width: 767px) {
+  .aboutHomeCont h3 {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal; }
+
+  footer {
+    background: #000;
+    color: #fff;
+    box-shadow: none; }
+    footer a,
+    footer p,
+    footer h6 {
+      color: #fff; }
+    footer h5 {
+      font-family: DIN-RegularAlternate;
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: normal;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    footer ul {
+      margin: 0px 0px 30px; }
+      footer ul li {
+        margin: 0px 0px 3px; }
+
+  footer .getIntouch {
+    box-shadow: 0px 0px 8px #3d3d3d; }
+
+  .navbar {
+    border-bottom: solid 1px #f3f3f3;
+    padding: 30px 0px 25px; }
+    .navbar #navbarSupportedContent {
+      background: #fff;
+      margin-top: 22px;
+      padding: 22px 10px; }
+
+  .xsShowDark {
+    border-top: 1px solid #fff;
+    margin-top: 40px; } }
+
+/*# sourceMappingURL=style.css.map */

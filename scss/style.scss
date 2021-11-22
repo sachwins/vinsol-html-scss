@@ -1,0 +1,238 @@
+    // Scss Document
+    //Variables
+    $highlightLinkColor: #f78806;
+    $blackColor: #000;
+    $blueColor: #17aacf;
+    $whiteColor: #fff;
+    $darkGrey:#3d3d3d;
+    //Mixins
+    @mixin robotofam ($fs, $lh) {
+        font-family: Roboto;
+        font-size: $fs;
+        line-height: $lh;
+        font-weight: normal;
+    }
+    
+    @mixin dinfam ($fs, $lh) {
+        font-family: DIN-RegularAlternate;
+        font-size: $fs;
+        line-height: $lh;
+        font-weight: normal;
+    }
+    
+    @mixin alinkprophover {
+        color: $highlightLinkColor;
+        text-decoration: none;
+    }
+    
+    //Font Include
+    @font-face {
+        font-family: "DIN-RegularAlternate";
+        src: url("../fonts/DIN-RegularAlternate.eot");
+        src: url("../fonts/DIN-RegularAlternate.eot?#iefix") format("embedded-opentype"), url("../fonts/DIN-RegularAlternate.woff2") format("woff2"), url("../fonts/DIN-RegularAlternate.woff") format("woff"), url("../fonts/DIN-RegularAlternate.ttf") format("truetype"), url("../fonts/DIN-RegularAlternate.svg#ortho") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    //Stylesheet
+    body {
+        @include dinfam (14px,
+        18px);
+        color: $blackColor;
+    }
+    
+    .container {
+        max-width: 940px;
+    }
+    
+    .navbar {
+        padding-top: 72px;
+    }
+    
+    a {
+        color: $blackColor;
+        &:hover {
+            @include alinkprophover;
+        }
+    }
+    
+    a.btn-default {
+        background: $whiteColor;
+        color: $highlightLinkColor;
+        &:hover {
+            @include alinkprophover;
+        }
+    }
+    
+    .nav-item {
+        padding: 0px 15px;
+        font-size: 15px;
+        .active {
+            color: $highlightLinkColor;
+        }
+    }
+    
+    .aboutHomeCont {
+        h3 {
+            @include robotofam (31px,
+            40px);
+        }
+    }
+    
+    #dropdownMenuButton {
+        @include robotofam (15px,
+        20px);
+        color: $blueColor;
+        background: none;
+        border: none;
+        padding: 0px;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    
+    .portfolioGallery {
+        .dropdown-item:hover,
+        .dropdown-item:focus {
+            color: $whiteColor;
+            background-color: $blueColor
+        }
+        figure {
+            margin: 0 0 50px;
+            overflow: hidden;
+            figcaption {
+                strong {
+                    @include dinfam (21px,
+                    21px);
+                    color: $blueColor;
+                    padding: 10px 0px 5px;
+                }
+                span {
+                    @include robotofam (12px,
+                    20px);
+                    color: $darkGrey;
+                }
+            }
+        }
+    }
+    
+    footer {
+        background: #e8e8e8;
+        box-shadow: inset 0px 3px 7px #bfbfbf;
+        h6 {
+            @include dinfam (12px,
+            12px);
+            color: $darkGrey;
+            letter-spacing: 1px;
+        }
+        .more {
+            @include robotofam (17px,
+            28px);
+            color: $highlightLinkColor;
+        }
+        p {
+            @include robotofam (12px,
+            21px);
+            color: $darkGrey;
+            a {
+                color: $highlightLinkColor;
+            }
+        }
+        small {
+            font-size: 10px;
+            a {
+                color: $highlightLinkColor;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    .getIntouch {
+        background: $highlightLinkColor;
+        background: linear-gradient( 0deg, rgba(221, 128, 34, 1) 0%, rgba(255, 150, 0, 1) 50%);
+        padding: 25px 46px;
+        margin-top: -60px;
+        box-shadow: 0px 0px 8px #999;
+        h6 {
+            @include robotofam (27px,
+            27px);
+            border-bottom: solid 1px #ffcc79;
+            color: $whiteColor;
+            margin: 0px auto 20px;
+        }
+        span {
+            @include dinfam (18px,
+            21px);
+            font-weight: bold;
+            strong {
+                font-size: 16px;
+            }
+            color: $darkGrey;
+            a {
+                color: $darkGrey;
+            }
+        }
+        .list-inline {
+            border-top: solid 1px #f8c280;
+            margin: auto;
+            li {
+                display: inline-block;
+                margin: 0px 10px;
+                a {
+                    color: $whiteColor;
+                    i {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .aboutHomeCont {
+            h3 {
+                @include robotofam (18px,
+                30px);
+            }
+        }
+        footer {
+            background: $blackColor;
+            color: $whiteColor;
+            box-shadow: none;
+            a,
+            p,
+            h6 {
+                color: $whiteColor;
+            }
+            h5 {
+                @include dinfam (15px,
+                15px);
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            ul {
+                margin: 0px 0px 30px;
+                li {
+                    margin: 0px 0px 3px;
+                }
+            }
+        }
+        footer .getIntouch {
+            box-shadow: 0px 0px 8px $darkGrey;
+        }
+        .navbar {
+            border-bottom: solid 1px #f3f3f3;
+            padding: 30px 0px 25px;
+            #navbarSupportedContent {
+                background: $whiteColor;
+                margin-top: 22px;
+                padding: 22px 10px;
+            }
+        }
+        .xsShowDark {
+            border-top: 1px solid $whiteColor;
+            margin-top: 40px;
+        }
+    }
