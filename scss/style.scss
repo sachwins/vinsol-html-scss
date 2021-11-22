@@ -63,6 +63,15 @@ a.btn-default {
     figure {
         margin: 0 0 50px;
         overflow: hidden;
+        img {
+            transition: all .5s ease-in-out;
+        }
+        &:hover img {
+            display: block;
+            position: relative;
+            transform: scale(1.1) translateY(-5px);
+            transition: all .5s ease-in-out;
+        }
         figcaption {
             strong {
                 @include dinfam (21px, 21px);
@@ -81,7 +90,8 @@ footer {
     background: #e8e8e8;
     box-shadow: inset 0px 3px 7px #bfbfbf;
     h6 {
-        @include dinfam (12px, 12px);
+        @include dinfam (15px, 15px);
+        font-weight: bold;
         color: $darkGrey;
         letter-spacing: 1px;
     }
