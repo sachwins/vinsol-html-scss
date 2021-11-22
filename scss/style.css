@@ -59,10 +59,7 @@ a.btn-default {
   .portfolioGallery figure img {
     transition: all .5s ease-in-out; }
   .portfolioGallery figure:hover img {
-    display: block;
-    position: relative;
-    transform: scale(1.1) translateY(-5px);
-    transition: all .5s ease-in-out; }
+    transform: scale(1.1) translateY(-5px); }
   .portfolioGallery figure figcaption strong {
     font-family: DIN-RegularAlternate;
     font-size: 21px;
